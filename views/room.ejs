@@ -1,3 +1,36 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    const ROOM_ID = "<%= roomId %>"
+  </script>
+  <script defer src="https://unpkg.com/peerjs@1.4.5/dist/peerjs.min.js"></script>
+  <script src="/socket.io/socket.io.js" defer></script>
+  <script src="script.js" defer></script>
+  <title>Document</title>
+  <style>
+    #video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 300px);
+      grid-auto-rows: 300px;
+    }
+    
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="video-grid"></div>
+</body>
+</html> -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,6 +41,11 @@
       const ROOM_ID = "<%= roomId %>";
       document.title += " | " + ROOM_ID;
     </script>
+    <!-- <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/images/favicon.svg"
+    /> -->
 
     <!-- libraries -->
     <link
@@ -16,7 +54,6 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <!-- scripts -->
     <script defer src="lib/peerjs.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -29,8 +66,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="/socket.io/socket.io.js" defer></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script> -->
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
 
     <!-- scripts -->
@@ -42,6 +79,18 @@
     <link rel="stylesheet" href="/styles/room.css" />
   </head>
   <body>
+    <!-- <div class="dark-light">
+      <svg
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="1.5"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+      </svg>
+    </div> -->
     <div class="app">
       <div class="wrapper">
         <div class="main">
@@ -73,21 +122,24 @@
               </div>
               <div class="main__controls__block">
                 <div
-                  onclick="window.location.href='/'"
+                  onclick="window.location.href='/home'"
                   class="main__controls__button"
                 >
-                  <span class="leave_meeting">
-                    <a href="/">Leave Meeting</a>
-                  </span>
+                  <span class="leave_meeting"
+                    ><a href="/home">Leave Meeting</a></span
+                  >
                 </div>
               </div>
               <div class="main__controls__block">
                 <div
+                  onclick="window.location.href='/chat/'+ROOM_ID"
                   class="main__controls__button"
+                >
+                  <span class="leave_meeting"
+                    ><a onclick="window.location.href='/chat/'+ROOM_ID;"
+                      >Go Back to ChatRoom</a
+                    ></span
                   >
-                  <span class="copy_text">
-                    <a>ROOM-ID: <%= roomId %></a>
-                    </span>
                 </div>
               </div>
             </div>
