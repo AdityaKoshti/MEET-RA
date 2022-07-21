@@ -5,8 +5,10 @@
 }
 
 body {
+    background-image: url("../images/5172658.jpg");
     font-family: 'Montserrat', sans-serif;
-    background: #f6f5f7;
+    /* background: #f6f5f7; */
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +16,7 @@ body {
     height: 100vh;
     margin: -20px 0 50px;
 		margin-top: 20px;
+    overflow-y: hidden;
 }
 
 h1 {
@@ -28,6 +31,10 @@ p {
     letter-spacing: .5px;
     margin: 20px 0 30px;
 }
+
+/* image{
+    z-index: -1;
+} */
 
 span {
     font-size: 12px;
@@ -46,9 +53,9 @@ a {
     box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 1100px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 600px;
 }
 
 .form-container form {
@@ -87,8 +94,8 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #ff4b2b;
-    background: #ff445c;
+    border: 1px solid #FF2E63;
+    background: #FF2E63;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
@@ -118,12 +125,12 @@ button.ghost {
     transition: all .6s ease-in-out;
 }
 
-.sign-in-container {
+/* .sign-in-container {
     left: 0;
     width: 50%;
     z-index: 2;
     transform: translateY(100%);
-}
+} */
 
 .sign-up-container {
     left: 0;
@@ -146,8 +153,9 @@ button.ghost {
 }
 
 .overlay {
-    background: #ff416c;
-    background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+    background: #252A34;
+    /* background: linear-gradient(to right, #252A34, #252A34) no-repeat 0 0 / cover; */
+    background-image: url("../images/19425921.jpg");
     color: #fff;
     position: relative;
     left: -100%;
