@@ -57,7 +57,7 @@ body {
   overflow-x: hidden;
 
   font-family: var(--body-font);
-  background-image: url("../images/5172658.jpg");
+  /* background-image: url("/assets/images/logo/macos-bg.jpg"); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -275,7 +275,7 @@ body.light-mode:before {
   color: #f5f5f5;
 }
 
-.copy_text {
+.leave_meeting {
   color: #eb534b;
 }
 
