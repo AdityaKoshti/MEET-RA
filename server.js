@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
 
 const { getAuth, createUserWithEmailAndPassword } = require('firebase/auth')
 const admin = require('firebase-admin')
-const credentials = require('./src/serviceAccountKey.json');
+// const credentials = require('./src/serviceAccountKey.json');
 const { get } = require('https');
 
 
