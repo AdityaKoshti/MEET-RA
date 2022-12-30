@@ -3,9 +3,4 @@
 /src/key.js
 /src/serviceAccountKey.json
 /public/lib/*
-/views/home.ejs
-/public/images
-/public/styles/*
 /src/*
-/views/home
-/public/images/*
