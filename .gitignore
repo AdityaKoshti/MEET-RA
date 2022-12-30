@@ -4,3 +4,4 @@
 /src/serviceAccountKey.json
 /public/lib/*
 /src/*
+.env
