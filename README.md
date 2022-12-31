@@ -7,9 +7,9 @@
 # Live Demo
 It's an Amazing Video Conferencing Web Application build over WebRTC and Socket.io<br>
 Try Live Demo on below URL.<br>
-https://ancient-harbor-36641.herokuapp.com/
+https://meet-bf2x.onrender.com
 ```
-https://ancient-harbor-36641.herokuapp.com/
+https://meet-bf2x.onrender.com
 ```
 
 # Preview

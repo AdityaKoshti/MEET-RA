@@ -27,7 +27,7 @@ admin.initializeApp({
       type: "service_account",
       project_id: process.env.ID,
       private_key_id: process.env.PRIVATE_ID,
-      private_key: process.env.KEY.replace(/\\n/gm, "\n"),
+      private_key: process.env.KEY,
       client_email: process.env.EMAIL,
       client_id: process.env.CLIENT_ID,
       auth_uri: "https://accounts.google.com/o/oauth2/auth",
